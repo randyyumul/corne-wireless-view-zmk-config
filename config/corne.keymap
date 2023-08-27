@@ -53,10 +53,10 @@
 
             label = "Raise";
             bindings = <
-&kp ESCAPE           &kp EXCL           &kp AT          &kp HASH           &kp DLLR     &kp PRCNT        &kp CARET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &trans    &trans  &kp UNDER
-  &kp CAPS      &kp KP_DIVIDE  &kp KP_MULTIPLY   &kp KP_SUBTRACT        &kp KP_PLUS  &kp KP_EQUAL    &kp AMPERSAND      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp EXCL  &kp PIPE  &kp GRAVE
- &kp LC(C)  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_AC_ZOOM_IN  &kp C_AC_ZOOM_OUT        &trans      &kp PERCENT        &kp LEFT_BRACE        &kp RIGHT_BRACE    &trans    &trans  &kp TILDE
-                                                          &trans             &trans        &trans           &trans                &trans                 &trans
+&kp ESCAPE           &kp EXCL           &kp AT         &kp HASH          &kp DLLR     &kp PRCNT        &kp CARET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &trans    &trans  &kp UNDER
+  &kp CAPS      &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp KP_SUBTRACT       &kp KP_PLUS  &kp KP_EQUAL    &kp AMPERSAND      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp EXCL  &kp PIPE  &kp GRAVE
+ &kp LC(C)  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp LG(KP_PLUS)  &kp LG(KP_MINUS)        &trans      &kp PERCENT        &kp LEFT_BRACE        &kp RIGHT_BRACE    &trans    &trans  &kp TILDE
+                                                         &trans            &trans        &trans           &trans                &trans                 &trans
             >;
         };
     };
