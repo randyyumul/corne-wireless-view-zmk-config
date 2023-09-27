@@ -21,10 +21,10 @@
 
             label = "Base";
             bindings = <
-  &kp TAB  &kp Q  &kp W  &kp E          &kp R     &kp T      &kp Y      &kp U      &kp I    &kp O     &kp P        &kp EQUAL
-&kp LCTRL  &kp A  &kp S  &kp D          &kp F     &kp G      &kp H      &kp J      &kp K    &kp L  &kp SEMI          &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C          &kp V     &kp B      &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-                         &mo 2  &kp BACKSPACE  &kp LGUI    &kp RET  &kp SPACE      &mo 1
+&kp TAB    &kp Q  &kp W  &kp E  &kp R          &kp T       &kp Y    &kp U      &kp I      &kp O    &kp P     &kp EQUAL
+&kp LCTRL  &kp A  &kp S  &kp D  &kp F          &kp G       &kp H    &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C  &kp V          &kp B       &kp N    &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
+                         &mo 2  &kp BACKSPACE  &kp LGUI    &kp RET  &kp SPACE  &mo 1
             >;
         };
 
@@ -37,10 +37,10 @@
 
             label = "Lower";
             bindings = <
-      &kp ESCAPE       &kp F1           &kp F2         &kp F3       &kp F4        &kp F5        &kp F6    &kp F7          &kp F8        &kp F9          &kp F10        &kp F11
-&kp LEFT_CONTROL       &kp N1           &kp N2         &kp N3       &kp N4        &kp N5        &kp N6    &kp N7          &kp N8        &kp N9           &kp N0  &kp RIGHT_ALT
-          &trans  &kp LC(TAB)  &kp LS(LC(TAB))  &kp PAGE_DOWN  &kp PAGE_UP  &bt BT_SEL 0    &bt BT_CLR  &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW   &bt BT_SEL 1
-                                                       &trans       &trans        &trans        &trans    &trans          &trans
+&kp ESCAPE        &kp F1       &kp F2           &kp F3         &kp F4       &kp F5        &kp F6        &kp F7    &kp F8          &kp F9        &kp F10          &kp F11
+&kp LEFT_CONTROL  &kp N1       &kp N2           &kp N3         &kp N4       &kp N5        &kp N6        &kp N7    &kp N8          &kp N9        &kp N0           &kp RIGHT_ALT
+&trans            &kp LC(TAB)  &kp LS(LC(TAB))  &kp PAGE_DOWN  &kp PAGE_UP  &bt BT_CLR    &bt BT_SEL 0  &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &bt BT_SEL 1
+                                                &trans         &trans       &trans        &trans        &trans    &trans
             >;
         };
 
@@ -53,10 +53,10 @@
 
             label = "Raise";
             bindings = <
-&kp ESCAPE           &kp EXCL           &kp AT         &kp HASH          &kp DLLR     &kp PRCNT        &kp CARET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &trans    &trans  &kp UNDER
-  &kp CAPS      &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp KP_SUBTRACT       &kp KP_PLUS  &kp KP_EQUAL    &kp AMPERSAND      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp EXCL  &kp PIPE  &kp GRAVE
- &kp LC(C)  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp LG(KP_PLUS)  &kp LG(KP_MINUS)        &trans      &kp PERCENT        &kp LEFT_BRACE        &kp RIGHT_BRACE    &trans    &trans  &kp TILDE
-                                                         &trans            &trans        &trans           &trans                &trans                 &trans
+&kp ESCAPE  &kp EXCL           &kp AT           &kp HASH         &kp DLLR          &kp PRCNT        &kp CARET      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans    &trans    &kp UNDER
+&kp CAPS    &kp KP_DIVIDE      &kp KP_MULTIPLY  &kp KP_SUBTRACT  &kp KP_PLUS       &kp KP_EQUAL     &kp AMPERSAND  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EXCL  &kp PIPE  &kp GRAVE
+&kp LC(C)   &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp LG(KP_PLUS)  &kp LG(KP_MINUS)  &kp BACKSLASH    &kp PERCENT    &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans    &trans    &kp TILDE
+                                                &trans           &trans            &trans           &trans         &trans                &trans
             >;
         };
     };
