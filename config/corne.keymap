@@ -36,30 +36,14 @@
 
             label = "Navigation";
             bindings = <
-&trans  &kp RET  &trans    &trans     &trans         &trans     &trans    &kp LS(LG(LEFT_BRACKET))  &kp RS(RG(F8))  &kp RC(O)  &kp RC(RIGHT_BRACKET)  &trans
-&trans  &trans   &kp HOME  &kp PG_UP  &kp PAGE_DOWN  &kp END    &kp LEFT  &kp DOWN                  &kp UP_ARROW    &kp RIGHT  &trans                 &trans
-&trans  &to 1    &to 2     &to 3      &to 4          &trans     &trans    &trans                    &trans          &trans     &trans                 &trans
-                           &trans     &trans         &to 0      &trans    &trans                    &trans
+&trans  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(NUMBER_5)    &kp LC(LEFT)  &kp LS(LG(LEFT_BRACKET))  &kp RS(RG(RIGHT_BRACKET))  &kp RC(O)  &kp RC(RIGHT_BRACKET)  &kp RC(RIGHT)
+&trans  &kp RET           &kp HOME          &kp PG_UP         &kp PAGE_DOWN     &kp END             &kp LEFT      &kp DOWN                  &kp UP_ARROW               &kp RIGHT  &trans                 &trans
+&trans  &to 1             &to 2             &to 3             &to 4             &trans              &trans        &kp LG(LEFT_BRACKET)      &kp RG(RIGHT_BRACKET)      &trans     &trans                 &trans
+                                            &trans            &trans            &to 0               &trans        &trans                    &trans
             >;
         };
 
-        raise_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
-            label = "Raise";
-            bindings = <
-&kp ESCAPE  &kp EXCL           &kp AT           &kp HASH         &kp DLLR      &kp PRCNT        &kp CARET      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans    &trans    &kp UNDER
-&kp CAPS    &kp KP_DIVIDE      &kp KP_MULTIPLY  &kp KP_SUBTRACT  &kp KP_PLUS   &kp KP_EQUAL     &kp AMPERSAND  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EXCL  &kp PIPE  &kp GRAVE
-&kp LC(C)   &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp LG(MINUS)    &kp LG(PLUS)  &kp BACKSLASH    &kp PERCENT    &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans    &trans    &kp TILDE
-                                                &trans           &trans        &trans           &trans         &trans                &trans
-            >;
-        };
-
-        layer_3 {
+        punct {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
@@ -68,7 +52,16 @@
             >;
         };
 
-        layer_4 {
+        num {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        media {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
