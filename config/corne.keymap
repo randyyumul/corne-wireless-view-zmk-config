@@ -40,7 +40,7 @@
             label = "Navigation";
             bindings = <
 &kp ENTER  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(NUMBER_5)    &trans    &kp LS(LG(LEFT_BRACKET))  &kp RS(RG(RIGHT_BRACKET))  &kp RC(O)  &kp RC(RIGHT_BRACKET)  &kp EQUAL
-&trans     &kp RET           &kp HOME          &kp PG_UP         &kp PAGE_DOWN     &kp END             &kp LEFT  &kp DOWN                  &kp UP_ARROW               &kp RIGHT  &trans                 &trans
+&trans     &trans            &kp HOME          &kp PG_UP         &kp PAGE_DOWN     &kp END             &kp LEFT  &kp DOWN                  &kp UP_ARROW               &kp RIGHT  &trans                 &trans
 &trans     &to 1             &to 2             &to 3             &to 4             &to 5               &trans    &kp LG(LEFT_BRACKET)      &kp RG(RIGHT_BRACKET)      &trans     &trans                 &trans
                                                &trans            &to 0             &trans              &trans    &trans                    &trans
             >;
