@@ -9,6 +9,21 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        NavLayer_R {
+            bindings = <&mo 1>;
+            key-positions = <41 40>;
+            layers = <0>;
+        };
+
+        NavLayer_L {
+            bindings = <&mo 1>;
+            key-positions = <37 36>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -21,10 +36,10 @@
 
             label = "Base";
             bindings = <
-&mt LS(LEFT_ALT) TAB  &kp Q  &kp W  &kp E         &kp R             &kp T        &kp Y  &kp U              &kp I          &kp O    &kp P           &kp BACKSPACE
-&mt LCTRL ESCAPE      &kp A  &kp S  &kp D         &kp F             &kp G        &kp H  &kp J              &kp K          &kp L    &kp SEMI        &kp RET
-&kp LEFT_SHIFT        &kp Z  &kp X  &kp C         &kp V             &kp B        &kp N  &kp M              &kp COMMA      &kp DOT  &mt RCTRL FSLH  &kp RIGHT_SHIFT
-                                    &kp LEFT_ALT  &kp LEFT_COMMAND  &kp SPACE    &mo 1  &kp RIGHT_COMMAND  &kp RIGHT_ALT
+&mt LS(LEFT_ALT) TAB  &kp Q  &kp W  &kp E         &kp R      &kp T       &kp Y      &kp U      &kp I      &kp O    &kp P           &kp MINUS
+&mt LCTRL ESCAPE      &kp A  &kp S  &kp D         &kp F      &kp G       &kp H      &kp J      &kp K      &kp L    &kp SEMI        &kp SINGLE_QUOTE
+&kp LEFT_SHIFT        &kp Z  &kp X  &kp C         &kp V      &kp B       &kp N      &kp M      &kp COMMA  &kp DOT  &mt RCTRL FSLH  &kp RIGHT_SHIFT
+                                    &kp LEFT_ALT  &kp SPACE  &kp LGUI    &kp ENTER  &kp SPACE  &kp RGUI
             >;
         };
 
@@ -37,10 +52,10 @@
 
             label = "Navigation";
             bindings = <
-&trans  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(NUMBER_5)    &kp LC(LEFT)  &kp LS(LG(LEFT_BRACKET))  &kp RS(RG(RIGHT_BRACKET))  &kp RC(O)  &kp RC(RIGHT_BRACKET)  &kp RC(RIGHT)
-&trans  &kp RET           &kp HOME          &kp PG_UP         &kp PAGE_DOWN     &kp END             &kp LEFT      &kp DOWN                  &kp UP_ARROW               &kp RIGHT  &trans                 &trans
-&trans  &to 1             &to 2             &to 3             &to 4             &to 5               &trans        &kp LG(LEFT_BRACKET)      &kp RG(RIGHT_BRACKET)      &trans     &trans                 &trans
-                                            &trans            &trans            &to 0               &trans        &trans                    &trans
+&kp ENTER  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(NUMBER_5)    &trans    &kp LS(LG(LEFT_BRACKET))  &kp RS(RG(RIGHT_BRACKET))  &kp RC(O)  &kp RC(RIGHT_BRACKET)  &kp RC(BACKSPACE)
+&trans     &kp RET           &kp HOME          &kp PG_UP         &kp PAGE_DOWN     &kp END             &kp LEFT  &kp DOWN                  &kp UP_ARROW               &kp RIGHT  &trans                 &trans
+&trans     &to 1             &to 2             &to 3             &to 4             &to 5               &trans    &kp LG(LEFT_BRACKET)      &kp RG(RIGHT_BRACKET)      &trans     &trans                 &trans
+                                               &trans            &to 0             &trans              &trans    &trans                    &trans
             >;
         };
 
@@ -49,7 +64,7 @@
 &kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN  &kp POUND  &kp DOLLAR  &kp PERCENT    &kp LCTRL         &kp AMPERSAND         &kp ASTERISK           &kp MINUS          &kp EQUAL  &trans
 &trans     &trans           &trans       &trans     &trans      &trans         &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp TILDE  &trans
 &trans     &trans           &trans       &trans     &trans      &trans         &kp PIPE          &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH      &trans     &trans
-                                         &trans     &trans      &to 0          &trans            &trans                &trans
+                                         &trans     &to 0       &trans         &trans            &trans                &trans
             >;
         };
 
@@ -58,7 +73,7 @@
 &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6     &kp N7           &kp N8      &kp N9  &kp N0        &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &kp MINUS  &kp N4           &kp N5      &kp N6  &kp PLUS      &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &kp SLASH  &kp N1           &kp N2      &kp N3  &kp ASTERISK  &trans
-                        &trans  &trans  &to 0     &trans     &kp KP_NUMBER_0  &kp KP_DOT
+                        &trans  &to 0   &trans    &trans     &kp KP_NUMBER_0  &kp KP_DOT
             >;
         };
 
@@ -67,7 +82,7 @@
 &trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans   &kp F12
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans   &trans
-                        &trans  &trans  &to 0     &trans  &trans  &trans
+                        &trans  &to 0   &trans    &trans  &trans  &trans
             >;
         };
 
@@ -76,7 +91,7 @@
 &bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
 &trans          &kp C_PREV    &kp C_REWIND  &kp C_PP      &kp C_FF      &kp C_NEXT      &trans  &trans  &trans  &trans      &trans             &trans
 &trans          &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans      &trans             &trans
-                                            &trans        &trans        &to 0           &trans  &trans  &trans
+                                            &trans        &to 0         &trans          &trans  &trans  &trans
             >;
         };
     };
