@@ -47,10 +47,10 @@
 
             label = "Base";
             bindings = <
-&mt LS(LEFT_ALT) TAB  &kp Q  &kp W  &kp E  &kp R      &kp T    &kp Y  &kp U      &kp I      &kp O    &kp P           &kp BACKSPACE
-&mt LCTRL ESCAPE      &kp A  &kp S  &kp D  &kp F      &kp G    &kp H  &kp J      &kp K      &kp L    &kp SEMI        &kp ENTER
-&kp LEFT_SHIFT        &kp Z  &kp X  &kp C  &kp V      &kp B    &kp N  &kp M      &kp COMMA  &kp DOT  &mt RCTRL FSLH  &kp RIGHT_SHIFT
-                                    &mo 4  &kp SPACE  &mo 3    &mo 1  &kp SPACE  &mo 2
+&mt LS(LEFT_ALT) TAB  &kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P           &kp BACKSPACE
+&mt LCTRL ESCAPE      &kp A  &kp S  &kp D  &kp F  &kp G        &kp H      &kp J  &kp K      &kp L    &kp SEMI        &kp ENTER
+&kp LEFT_SHIFT        &kp Z  &kp X  &kp C  &kp V  &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &mt RCTRL FSLH  &kp RIGHT_SHIFT
+                                    &mo 4  &mo 3  &kp SPACE    &kp SPACE  &mo 1  &mo 2
             >;
         };
 
@@ -63,10 +63,10 @@
 
             label = "Navigation";
             bindings = <
-&kp ENTER  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(NUMBER_5)    &trans    &kp LS(LG(LEFT_BRACKET))  &kp RS(RG(RIGHT_BRACKET))  &kp RC(O)  &kp RC(RIGHT_BRACKET)  &kp EQUAL
-&trans     &trans            &kp HOME          &kp PG_UP         &kp PAGE_DOWN     &kp END             &kp LEFT  &kp DOWN                  &kp UP_ARROW               &kp RIGHT  &trans                 &trans
-&trans     &to 1             &to 2             &to 3             &to 0             &to 4               &trans    &kp LG(LEFT_BRACKET)      &kp RG(RIGHT_BRACKET)      &trans     &trans                 &trans
-                                               &trans            &to 0             &trans              &trans    &trans                    &trans
+&trans  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(NUMBER_5)    &trans    &kp LS(LG(LEFT_BRACKET))  &kp RS(RG(RIGHT_BRACKET))  &kp RC(O)  &kp RC(RIGHT_BRACKET)  &kp EQUAL
+&trans  &trans            &kp HOME          &kp PG_UP         &kp PAGE_DOWN     &kp END             &kp LEFT  &kp DOWN                  &kp UP_ARROW               &kp RIGHT  &trans                 &trans
+&trans  &tog 1            &to 2             &to 3             &to 0             &to 4               &trans    &kp LG(LEFT_BRACKET)      &kp RG(RIGHT_BRACKET)      &trans     &trans                 &trans
+                                            &trans            &to 0             &trans              &trans    &trans                    &trans
             >;
         };
 
