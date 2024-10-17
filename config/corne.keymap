@@ -33,6 +33,11 @@
             bindings = <&kp RALT>;
             key-positions = <40 41>;
         };
+
+        EscapeCombo {
+            bindings = <&kp ESCAPE>;
+            key-positions = <19 20>;
+        };
     };
 
     keymap {
